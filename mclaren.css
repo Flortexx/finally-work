@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    background: radial-gradient(circle, rgba(134,134,134,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.imageContainer {
+    background: radial-gradient(circle, rgba(134,134,134,1) 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.imageContainer p {
+    margin: 10px 0;
+}
+
+.imageContainer button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.imageContainer button:hover {
+    background-color: #cc7a00;
+}
+@media only screen and (max-width: 900px) {
+    .container {
+      padding: 20px;
+    }
+    .contact-wrapper{
+        grid-template-columns: 1fr; 
+    }
+}
